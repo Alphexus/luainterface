@@ -67,12 +67,14 @@ function Interface:Compare(supposedInterface, strict)
 		end
 
 		if not (typeof(value) == self.Props[name].DataType) then
+                        alike = false
 			if strict then Errors[2](name, self.Props[name].DataType, value) end
 		end
 	end
 
 	for name, interfaceValue in pairs(self:GetRequireds()) do
 		if not supposedInterface[name] then
+                        alike = false
 			if strict then Errors[3](name) end
 		end	
 	end
