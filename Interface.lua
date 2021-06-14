@@ -68,7 +68,7 @@ function Interface:Compare(supposedInterface, strict)
 
 		if not (typeof(value) == self.Props[name].DataType) then
                         alike = false
-			if strict then Errors[2](name, self.Props[name].DataType, value) end
+			if strict then Errors[2](name, self.Props[name].DataType, typeof(value)) end
 		end
 	end
 
