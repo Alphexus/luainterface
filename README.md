@@ -1,5 +1,5 @@
 # luainterface
-Simple interface implementation in Lua
+A very simple interface implementation in Lua
 
 
 # Documentation
